@@ -1,0 +1,844 @@
+* {
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:NunitoSansRegular,sans-serif;
+   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll_up {
+   position: fixed;
+   right: 3px;
+   z-index: 10000;
+   bottom: 5px;
+   overflow-y: hidden;
+   
+}
+/* CSS NAVIGATION */
+header {
+   background-color: rgb(0, 119, 255);
+}
+
+nav {
+   max-width: 80%;
+   display: flex;
+   height: 50;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+
+nav ul {
+   display: flex;
+   width: 45%;
+   justify-content: space-between;
+   list-style: none;
+}
+nav  a {
+   text-decoration: none;
+   color: white;
+}
+
+.logo {
+   letter-spacing: 5px;
+   margin-top: 1; 
+   color: white; 
+   cursor: pointer;
+
+}
+
+.menu {
+   display: none;
+}
+/* ================================================== */
+/* CSS CONTENT */
+.content {
+   background-image: url('assets/image/bg.jpg');
+   background-repeat: no-repeat;
+   height: 700;
+   background-size:cover;
+   background-position:center;
+   
+  
+   
+}
+.tulisan {
+   color: white;
+   letter-spacing: 3px;
+   max-width: 650;
+   margin: auto;
+   padding-top: 150;
+   text-align: center;
+}
+
+.tulisan h1 {
+   font-size: 50;
+   max-width: 700;
+   text-shadow: 4px 2px 2px rgb(0, 0, 0);
+   
+}
+
+.tulisan p {
+   font-size: 20;
+   max-width: 500;
+   margin: 0 auto;
+   text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+.button {
+   background-color:rgb(0, 119, 255);
+   border-radius: 12px;
+   padding: 18;
+   margin: auto;
+   max-width: 300;
+}
+
+.button a{
+   letter-spacing: 1px;
+   max-height: 40;
+   align-self: center;
+}
+
+/* =================================================== */
+/* CSS untuk Paket */
+.menu_paket {
+   background-color: #c9c8d3;
+   height: 1200;
+   margin-top: -100;
+}
+
+
+.column_paket {
+   display: flex;
+   flex-direction: column; 
+}
+
+.judul_paket {
+   margin-top: 100;
+   flex-grow: 2;
+   text-align: center;
+   padding: 70;
+   font-size: 30px;
+}
+
+.paket {
+   text-align:center;
+   margin: 20px;
+   padding: 5;
+   display: flex;
+   flex-direction: column;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   transition: width 1s, height 1s;
+   width: 250px;
+   height: 350px;
+   box-shadow:  3px 3px 3px 3px rgb(190, 189, 189);
+}
+
+ .paket *  {
+   padding: 20;
+}
+
+.paket p {
+   font-size: 13;
+}
+
+.paket h1 {
+   font-size: 23;
+}
+
+.paket h4 {
+   font-size: 17;
+}
+
+.price {
+   margin-top: -30;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   flex-grow: 1;
+   width: 900px;
+   margin: 0 auto;
+}
+
+.paket a {
+   text-decoration: none;
+   color:rgb(0, 102, 255);
+   margin-top: 20;
+}
+/* =================================================== */
+/* CSS Untuk Kelebihan */
+.kelebihan {
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   padding: 20;
+   
+}
+
+.kelebihan_column {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   width: 80%;
+   justify-content: space-evenly;
+}
+
+
+.judul_kelebihan {
+   text-align: center;
+   margin: 40 auto;
+}
+
+.kelebihan p {
+   line-height: 2;
+}
+
+.sisi {
+   max-width: 450;
+}
+#bagian_1 {
+   font-size: 20;
+}
+
+.sisi_kedua img {
+   max-width: 500;
+   margin: 50 0;
+}
+
+#btn {
+   padding: 17; background-color:orange; color: white; border-radius: 12px; margin-top: 40; cursor: pointer;
+}
+/* =================================================== */
+/* CSS Untuk Testimoni */
+.testimoni {
+   background-color: #c9c8d3 ;
+   padding-bottom: 50;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.row_testimoni {
+   display: flex;
+   flex-grow: 1;
+   margin: auto;
+   max-width: 1000;
+
+}
+
+.judul_testimoni {
+   flex-grow: 2;
+   text-align: center;
+   padding: 50;
+   font-size: 30px;
+}
+
+.orang img {
+   margin-top: 20; 
+   border-radius: 50%;
+   border: 2px solid white;
+}
+
+.orang p {
+   text-align: center;
+   color: white;
+   font-size: 13;
+}
+
+.garis {
+   border: 1px rgb(255, 255, 255) solid; 
+   width: 230px;
+   margin-top: 10;
+   margin-left: 15;
+   margin-bottom: 10;
+}
+
+.orang {
+   align-items: center;
+   margin: 20;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(0, 102, 255);
+   border-radius: 5px;
+   max-width: 265;
+   max-height: 500;
+   box-shadow: 5px 5px 5px rgb(167, 167, 167);
+   padding: 10;
+}
+
+/* =================================================== */
+/* CSS untuk iklan */
+.iklan  {
+   background-color: #746fbd ;
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   padding: 40;
+}
+
+.iklan p {
+   text-align: center;
+   color: white;
+   font-size: 40; 
+   max-width: 500;
+}
+
+.btn_2 {
+   padding:10;
+   background-color:rgb(255, 132, 0); 
+   color: white; 
+   cursor:pointer; 
+   border-radius: 15px; 
+   border: 1px solid ;
+   height: 40;
+   letter-spacing: 3px;
+   margin-left: 200;
+   align-self: center;
+}
+
+/* =================================================== */
+/* CSS untuk garansi */
+.garansi  {
+   background-color: #ffffff ;
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+   padding: 30;
+   height: 250;
+   margin: auto;
+   
+}
+
+.tulisan_garansi {
+   align-self: center;
+   max-width: 500;
+   text-align: center;
+}
+
+.tulisan_garansi p {
+   color: rgb(0, 0, 0);
+   font-size: 15; 
+}
+
+.tulisan_garansi h1 {
+   color: rgb(0, 0, 0);
+   font-size: 30; 
+}
+
+.btn_3 {
+   padding:10;
+   background-color:rgb(255, 132, 0); 
+   color: white; 
+   cursor:pointer; 
+   border-radius: 15px; 
+   border: 1px solid ;
+   height: 40;
+   letter-spacing: 3px;
+   
+}
+
+/* =================================================== */
+/* CSS untuk Paymant */
+.paymant {
+   background-color: #c9c8d3;
+   padding: 40;
+   color:grey;
+   display: flex;
+   flex-direction: column;
+   padding: 20;
+   height: fit-content;
+   
+}
+
+
+.column_paymant {
+   width: 80%;
+   display: flex;
+   flex-grow: 1;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   text-align: center;
+   overflow-y: hidden;
+   justify-content: center;
+}
+
+.judul_paymant {
+   padding: 20;
+   flex-grow: 2;
+   text-align: center;
+   font-size: 15px;
+   overflow-y: hidden;
+}
+
+
+.column_paymant img {
+   margin: 10 10;
+   padding: 5;
+   filter: grayscale(100) ;
+   }
+
+   .column_paymant img:hover {
+      filter: none;
+   }
+
+/* =================================================== */
+/* CSS Untuk footer */
+.footer {
+   background-color: #09044f ;
+   display: flex;
+   flex-direction: column;
+   padding: 70;
+   
+}
+
+.footer_atas {
+   justify-content: space-evenly;
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   align-items: center;
+   margin: 0 auto;
+}  
+
+.biodata {
+   width: 30%;
+   border: 2px solid white;
+   padding: 10;
+   text-align: center;
+ 
+   background-color:rgb(0, 102, 255);
+   border-radius: 12px;
+}
+
+.biodata h2 {
+   text-align: center;
+}
+
+.biodata img {
+   margin: 20 0;
+   border-radius: 50%;
+   border: 2px solid white;
+   align-self: center;
+   box-shadow: 0 0 0 14px #00a2ff;
+}
+
+.contact {
+   width: 40%;
+   
+}
+
+.contact i {
+   margin-bottom: 20;
+}
+
+.contact, .biodata * {
+   color: #fff ;
+   letter-spacing: 1px;
+   line-height: 2;
+   flex-grow: 2;
+}
+
+.data {
+   text-align: center;
+   font-size: 14;
+}
+
+.footer_kiri {
+   width: 50%;
+}
+
+.footer_bawah li {
+   color: white;
+   text-align: left;
+   padding: 15;
+   flex-grow: 1;
+
+}
+
+hr {
+   color: grey;
+   width: 80%;
+   margin: 0 auto;
+}
+  .footer_bawah {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 10;
+      margin: 0 auto;
+      width: 80%;
+   }
+
+
+.fab {
+      color:rgb(0, 119, 255);
+      padding-inline: 10px;
+    }
+span.fab {
+   margin-top: 10;
+}
+
+span.fas  {
+    color:rgb(0, 119, 255);
+    margin-top: 10;
+}
+
+/* =================================================== */
+/* MEDIA QUERY */
+@media screen and (max-width:576px) {
+   /* CSS NAVIGATION */
+   nav ul {
+      position: absolute;
+      right: 0;
+      top: 50;
+      flex-direction: column;
+      background-color: rgb(0, 119, 255);
+      width: 50%;
+      justify-content: space-evenly;
+      height: 651;
+      transform: translate(100%);
+      opacity: 0;
+      text-align: center;
+      transition: all 1s;
+     
+  
+   }
+   nav ul.slide  {
+      transform: translateX(0);
+      opacity: 1;
+   }
+
+   nav ul.slideback  {
+      transform: translateX(100%);
+      opacity: 0;
+   }
+
+   nav li a {
+      text-align: center;
+   }
+
+   .menu {
+      display: flex;
+ 
+   }
+    /* ================================= */
+    /* CSS CONTENT */
+    .content {
+      margin-top: -1;
+      height: 752;
+   }
+
+   .tulisan h1 {
+      font-size: 30;
+   }
+
+   .tulisan {
+      letter-spacing: 3px;
+      }
+      
+
+   .button {
+      max-height: 50;
+      padding: 12;
+   }
+
+   .menu_paket {
+      height: 2800;
+   }
+
+   .row_testimoni, .iklan {
+      flex-direction: column;
+      align-items: center;
+      
+   }
+
+   .paket, .row {
+      max-width: 250;
+      align-self: center;
+   }
+
+   i.fas {
+      color: white;
+      cursor:pointer;
+      z-index: 1000;
+    }
+
+   .row  {
+      flex-direction: column;
+   }
+
+   /* ================================================ */
+   /* UNTUK CSS KELEBIHAN */
+
+   .kelebihan {
+     text-align: center;
+     height: fit-content;
+     max-width: 576; 
+   }
+
+   .kelebihan_column {
+      flex-direction:column-reverse ;
+      max-width: 500;
+
+   }
+
+   .judul_kelebihan {
+      font-size: 20;
+      max-width: 350;
+   }
+
+   .sisi {
+      margin: 0 auto;   
+      font-size: 14;
+   }
+
+   #btn {
+      padding: 10;
+      font-size: 12;
+   }
+
+   .sisi_kedua {
+      max-width: 500;
+      margin-bottom: 50;
+   }
+   .sisi_kedua img {
+      max-width: 250;
+      max-height: 200;
+   }
+
+   /* ========================================= */
+   /* CSS UNTUK TESTIMONI */
+   .row_testimoni {
+      max-width: 300;
+   }
+   .orang {
+      max-width: 300;
+      max-height: 500;
+      
+   }
+   
+   /* ========================================= */
+   /* CSS UNTUK GARANSI */
+   .garansi {
+      flex-direction: column;
+      height: fit-content;
+      text-align: center;
+   }
+
+   .foto {
+      height: 180;
+   }
+
+   .tulisan_garansi {
+      margin: 0 auto;
+   }
+
+   .tulisan_garansi h1 {
+      font-size: 18;
+      margin-top: 10;
+   }
+   
+   .tulisan_garansi p {
+      font-size: 12; 
+
+   }
+   .btn_3 {
+      text-align: center;
+      height: 40;
+      letter-spacing: 1px; 
+   }
+   /* ================================================ */
+   /* CSS UNTUK IKLAN */
+   .iklan p {
+      font-size: 20; 
+      max-width: 300;
+   }
+
+   .btn_2 {
+      text-align: center;
+      margin: 20 auto;
+      height: 40;
+      letter-spacing: 1px; 
+   }
+   /* ================================================ */
+   /* CSS PAYMANT */
+   .paymant {
+      height: fit-content;
+   }
+   
+   .column_paymant {
+      width: 100%;
+      height: fit-content;
+   }
+   .judul_paymant {
+      font-size: 12;
+   }
+
+   .column_paymant img {
+      width: 20%;
+      height: 20%;
+      filter: grayscale(0);
+   }
+
+
+   /* ================================================ */
+   /* CSS FOOTER */
+   .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 20;
+      
+   }
+
+   .footer_atas {
+      display: flex;
+      flex-direction: column;
+   }
+   .contact p {
+      font-size: 12;
+   }
+   .contact{
+      width: auto;
+      text-align: center;
+
+   }
+
+   .biodata {
+      width: 80%;
+   }
+
+   .footer_bawah {
+      flex-direction: column;
+   }
+
+   .footer_kiri {
+      width: 100%;
+   }
+
+}
+
+@media screen and ( 576px <= width <= 900px) {
+   nav li {
+   list-style: none;
+   justify-items: space-between;
+   margin-left: 30;
+   } 
+
+   nav a {
+      display: flex;
+   }
+
+
+   /* Untuk Paket */
+   .menu_paket {
+   background-color: #c9c8d3;
+   height: 1300;
+   }
+
+
+.column_paket {
+   display: flex;
+   flex-direction: row;
+   }
+
+.paket {
+   text-align:center;
+   display: flex;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   transition: width 1s, height 1s;
+   max-width: 200px;
+   max-height: 300px;
+   box-shadow:  3px 3px 3px 3px rgb(190, 189, 189);
+   }
+
+   .paket *  {
+      padding: 15;
+   }
+
+   .paket p {
+      font-size: 13;
+   }
+
+   .paket h1 {
+      font-size: 20;
+   }
+
+   .pkaet h4 {
+      font-size: 17;
+   }
+
+   .price {
+      margin-top: -30;
+   }
+
+   .row {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: center;
+   }
+
+   .paket a {
+      text-decoration: none;
+      color:rgb(0, 102, 255);
+      margin-top: 20;
+   }
+   .contact {
+      flex-direction: column;
+   }
+
+/* CSS UNTUK GARANSI */
+   .garansi {
+      flex-direction: column;
+      height: fit-content;
+      text-align: center;
+   }
+
+   .foto {
+      height: 180;
+   }
+
+   .tulisan_garansi {
+      margin: 0 auto;
+   }
+
+   .tulisan_garansi h1 {
+      font-size: 25;
+      margin-top: 10;
+   }
+   
+   .tulisan_garansi p {
+      font-size: 12; 
+
+   }
+   .btn_3 {
+      text-align: center;
+      height: 40;
+      letter-spacing: 1px; 
+   }
+
+
+@media screen and (min-width:900px) {
+   .sosmed:hover{
+   color: darkgoldenrod;
+   }
+
+   .paket:hover {
+      top: 10;
+      width: 270px;
+      height: 370px;
+      box-shadow:  5px 5px 5px 5px rgb(165, 165, 165);
+   }
+}
+
